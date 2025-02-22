@@ -12,7 +12,7 @@ app.get('/comments', (req, res) => {
 });
 
 app.post('/comments', (req, res) => {
-    const comment = req.body;
+    const comment = req.body; 
     comments.push(comment);
     res.status(201).json(comment);
 });
